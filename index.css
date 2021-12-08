@@ -77,3 +77,67 @@ span i {
   color: rgb(172, 172, 172);
   font-size: 16px;
 }
+
+.responsive {
+  visibility: hidden;
+}
+.responsive-search {
+  display: none;
+}
+/* for smaller screens */
+@media screen and (max-width: 1000px) {
+  .responsive {
+    visibility: visible;
+  }
+  .search {
+    display: none;
+  }
+  .responsive-search {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .responsive-search input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgb(211, 211, 211);
+  }
+
+  .responsive-search button {
+    background-color: #5683ea;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .displayContent {
+    width: 80vw;
+    margin: auto;
+  }
+  .displayContent img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .displayContent .content {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .icons {
+    justify-content: space-evenly;
+  }
+  .icons span {
+    font-size: 1em;
+  }
+  .displayMenu {
+    width: 80vw;
+    margin: auto;
+  }
+}
